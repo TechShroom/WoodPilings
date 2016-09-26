@@ -44,8 +44,8 @@ public final class Modules {
 
         static ModsModMeta
                 of(String id, String name, Set<ModuleDependency> loadAfterModules, Set<ModuleDependency> loadBeforeModules, Set<ModuleDependency> requiredModules, SemVer version) {
-            return new AutoValue_Modules_ModsModMeta(id, name, loadAfterModules, loadBeforeModules, requiredModules,
-                    version);
+            return new AutoValue_Modules_ModsModMeta(id, name, version, loadAfterModules, loadBeforeModules,
+                    requiredModules);
         }
     }
 
